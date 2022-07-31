@@ -1,0 +1,15 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target x86_64-apple-ios13.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ProcenneTech_case
+import CommonCrypto
+import Foundation
+@_exported import ProcenneTech_case
+import Swift
+import _Concurrency
+public struct AES {
+  public init(key: Foundation.Data, iv: Foundation.Data) throws
+}
+extension ProcenneTech_case.AES {
+  public func encrypt(_ data: Foundation.Data) throws -> Foundation.Data
+  public func decrypt(_ data: Foundation.Data) throws -> Foundation.Data
+}

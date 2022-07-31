@@ -1,0 +1,11 @@
+framework module ProcenneTech_case {
+  umbrella header "ProcenneTech_case.h"
+
+  export *
+  module * { export * }
+}
+
+module ProcenneTech_case.Swift {
+    header "ProcenneTech_case-Swift.h"
+    requires objc
+}
